@@ -1,0 +1,89 @@
+main {
+    .whatsaap {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+
+        img {
+            width: 70px;
+        }
+    }
+
+    .flayer {
+        overflow-x: hidden;
+        height: 576px;
+        background-image: url("../img/flayer.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        h2 {
+            font-size: 3rem;
+            color: white;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        a {
+            @include botones;
+            font-size: 1.5rem;
+        }
+    }
+
+    //SECCION 2
+    .seccion-2 {
+    
+    .box-1 {
+        height: 300px;
+        background-color: rgb(210, 180, 222, 0.5);
+    }
+
+    .box-2 {
+        height: 300px;
+        background-color: rgb(163, 228, 215, 0.5);
+    }
+
+    .box-3 {
+        height: 300px;
+        background-color: rgb(207, 166, 161, 0.533);
+    }
+}
+
+}
+
+.ayudanos{
+    h1{
+        font-size: 3rem;
+       text-transform: uppercase; 
+    }
+    .boxUno{
+        width: 100%;
+        .textBox-1{
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        .imgBox-1{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+            img{
+                width: 80%;
+            }
+        }
+        .imgBox-2{
+            img{
+                width: 100%;
+            }
+        }
+        
+    }
+    
+    
+}

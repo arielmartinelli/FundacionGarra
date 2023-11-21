@@ -1,0 +1,16 @@
+.navbar-nav{
+    a{
+        color: $color-gris;
+        font-weight: 600;
+    }
+    &:hover{
+        color: black;
+    }
+}
+
+.boton-adopta{
+    a{
+        @include botones;
+    }
+    
+}

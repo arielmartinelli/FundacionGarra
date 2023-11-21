@@ -1,0 +1,10 @@
+@mixin botones{
+    text-decoration: none;
+    color: white;
+    background-color: $rosa;
+    font-weight: 600;
+    border-radius: 5px;
+    &:hover{
+        background-color: $celeste;
+    }
+}
