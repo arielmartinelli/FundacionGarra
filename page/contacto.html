@@ -24,13 +24,13 @@
                         <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./page/ayudanos.html">Ayudanos</a>
+                        <a class="nav-link " aria-current="page" href="ayudanos.html">Ayudanos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#">Voluntariado</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Novedades</a>
+                        <a class="nav-link " aria-current="page" href="nosotros.html">Novedades</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#">Nosotros</a>
@@ -42,49 +42,53 @@
             </div>
         </div>
     </nav>
-    <main class="ayudanos">
+    <main class="contacto">
         <div class="h1">
-            <h1 class="ps-5"> ¿Cómo podes ayudar? </h1>
+            <h1 class="ps-5"> Te escuchamos </h1>
         </div>
-        <div class="boxUno row mt-4">
-            <div class="textBox-1 col-7 text-start my-auto ">
-                <a href="voluntariado.html" style="text-decoration: none; color: black;"><h2 > Hacéte voluntario </h2></a>
-                <p > Ser voluntario implica realizar diversas tareas, como cuidado diario de los animales, limpieza y mantenimiento, apoyo en eventos y campañas, transporte. Los voluntarios contribuyen al bienestar de los perros.  </p>
+        <div class="row  mb-5 d-flex justify-content-evenly">
+            <div class="col-6 text-center maps ps-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217955.0018423589!2d-64.3590252924875!3d-31.39905470699917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1700846576718!5m2!1ses-419!2sar" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="px-5 mt-4">No compartimos la ubicación exacta del refugio por razones de seguridad para nuestros animales y equipo. Esta medida busca asegurar la tranquilidad y prevenir riesgos. Para consultas urgentes, les instamos a contactarnos a través de nuestras vías oficiales. Agradecemos su comprensión y apoyo.</p>
             </div>
-            <div class="imgBox-1 col-5 my-auto">
-                <img src="../img/voluntario.png">
+            <div class="form col-6 my-auto mt-3 ps-4">
+                <h2 class="mb-3"> Contáctanos </h2>
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="nombre col-5">
+                            <label class="d-inline" for="nombre" required>Nombre:</label>
+                            <input  type="text" id="nombre" name="nombre" placeholder="Ej. Juan" required>
+                        </div>
+            
+                        <div class="apellido col-7">
+                            <label class="d-inline" for="apellido" required>Apellido:</label>
+                            <input  type="text" id="apellido" name="apellido" placeholder="Ej. Perez" required>
+                        </div>
+                    </div>
+            
+                    <label for="correo" required>Correo Electrónico:</label>
+                    <input  type="email" id="correo" name="correo" placeholder="Ej. juanperez@hotmail.com" required>
+            
+                    <label for="opcion" required>Selecciona una opción:</label>
+                    <select class="mb-2" id="opcion" name="opcion">
+                        <option value="opcion1">Adoptar</option>
+                        <option value="opcion2">Voluntariado</option>
+                        <option value="opcion3">Donar</option>
+                        <option value="opcion4">Reportar</option>
+                        <option value="opcion5">Otros</option>
+                    </select>
+            
+                    <label for="comentarios">Contanos tu inquietud:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            
+                    <input class="boton" type="submit" value="Enviar">
+                </form>
             </div>
         </div>
-        <div class="boxUno row mt-4">
-            <div class="imgBox-2 col-5 my-auto">
-                <img src="../img/dona.png">
-            </div>
-            <div class="textBox-2 col-7 text-end my-auto ">
-                <h2 > Doná </h2>
-                <p > Donar implica brindar apoyo financiero o suministros para cuidado veterinario, alimentación, mejoras en instalaciones, programas de adopción, transporte, capacitación del personal, emergencias y operaciones diarias. </p>
-            </div>
-        </div>
-        <div class="boxUno row mt-4">
-            <div class="textBox-1 col-7 text-start my-auto">
-                <h2 > Apoyanos en redes </h2>
-                <p > Es importante apoyar en redes sociales  para aumentar la visibilidad, concientizar sobre el cuidado de los animales sin hogar y promover adopciones. También facilita la recaudación de fondos, la participación comunitaria, la interacción directa con seguidores y la movilización de voluntarios. </p>
-            </div>
-            <div class="imgBox-1 col-5 my-auto">
-                <img src="../img/apoyanos.png">
-            </div>
-        </div>
-        <div class="boxUno row mt-4">
-            <div class="imgBox-1 col-5 my-auto">
-                <img src="../img/hogar.png">
-            </div>
-            <div class="textBox-2 col-7 text-end my-auto ">
-                <h2> Brindá un hogar provisorio </h2>
-                <p> Brindar un hogar provisorio sirve para ofrecer temporalmente un entorno seguro y amoroso a los animales antes de ser adoptados de manera permanente. Esta acción ayuda a aliviar la sobrepoblación en el refugio y proporciona cuidados personalizados. </p>
-            </div>
-        </div>
+        
     </main>
     <footer> 
-        <div class="row footer mt-4">
+        <div class="row footer">
             <div class="fLeft col-4 text-center">
                 <img class="pt-4" src="../img/logo.png" alt="Logo Fundacion Garra">
                 <p class="text-start mx-auto"> Nuestra fundación se dedica a brindar amor y refugio a perros de la calle, trabajando juntos para construir un futuro donde cada patita encuentre un hogar lleno de cariño.</p>
@@ -118,7 +122,7 @@
             </div>
         </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

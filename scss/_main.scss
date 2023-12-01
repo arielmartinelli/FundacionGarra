@@ -1,11 +1,21 @@
+body {
+    overflow-x: hidden;
+}
+
 main {
     .whatsaap {
         position: fixed;
         bottom: 50px;
         right: 50px;
-
+        z-index: 1000;
+        
         img {
             width: 70px;
+        }
+        @media screen and (max-width: 700px){
+            img{
+                width: 70px;
+            }
         }
     }
 
@@ -18,9 +28,11 @@ main {
         background-repeat: no-repeat;
 
         h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: white;
         }
+
+        
 
         p {
             font-size: 1.2rem;
@@ -30,60 +42,526 @@ main {
         a {
             @include botones;
             font-size: 1.5rem;
+            text-shadow: .5px .8px black;
         }
+
+        @media screen and (max-width: 1040px){
+            h2{
+                font-size: 2rem;
+            }
+        }
+        @media screen and (max-width: 760px){
+            h2{
+                font-size: 1.7rem;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+            a{
+                font-size: 1.2rem;
+                padding:10px 10px ;
+            }
+        }
+
+    }
+
+    
+
+    //SECCION 2
+
+    .seccion-2 {
+        h3 {
+            font-size: 3.2rem;
+            text-transform: uppercase;
+            margin: 8rem 0rem 6rem 0rem;
+        }
+
+        .card {
+            border: none;
+            position: relative;
+
+            .card-body {
+                text-align: center;
+            }
+        }
+        @media screen and (max-width: 760px){
+            h3{
+                font-size: 3rem;
+            }
+            h4{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+        }
+
     }
 
     //SECCION 2
-    .seccion-2 {
-    
-    .box-1 {
-        height: 300px;
-        background-color: rgb(210, 180, 222, 0.5);
-    }
 
-    .box-2 {
-        height: 300px;
-        background-color: rgb(163, 228, 215, 0.5);
-    }
+    .seccion-3 {
+        h3 {
+            font-size: 3.2rem;
+            text-transform: uppercase;
+            margin: 5rem 0rem 3rem 0rem;
+        }
 
-    .box-3 {
-        height: 300px;
-        background-color: rgb(207, 166, 161, 0.533);
-    }
-}
-
-}
-
-.ayudanos{
-    h1{
-        font-size: 3rem;
-       text-transform: uppercase; 
-    }
-    .boxUno{
-        width: 100%;
-        .textBox-1{
-            h2{
-                font-size: 3rem;
+        .carrusel {
+            width: 70%;
+            overflow: hidden;
+            img{
+                height: 500px;
+                object-fit: cover;
             }
             p{
-                font-size: 1.3rem;
+                font-size: 1.8rem;
+                text-shadow: 1px 1px 4px black;
+            }
+            .remarcada{
+                color: rgb(255, 51, 51);
+                font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            }
+
+            @media screen and (max-width: 760px){
+                .carrusel{
+                    width: 90%;
+                }
+                img{
+                    height: 300px;
+                    object-fit: cover;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
             }
         }
-        .imgBox-1{
+
+        @media screen and (max-width: 760px){
+            .carrusel{
+                width: 90%;
+            }
+        }
+            
+    }
+
+}
+
+//AYUNADOS
+
+.ayudanos {
+    .h1{
+        height: 15rem;
+        background-image: url("../img/perro\ ayuda.png");
+        background-position: center;
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items:center ;
+        h1{
             display: flex;
-                justify-content: center;
-                align-items: center;
-            img{
+            align-items: center;
+            color: white;
+            font-size: 3.2rem;
+        }
+    }
+
+    @media screen and (max-width:1040px) {
+        .h1{
+            height: 10rem;
+            h1{
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+    .boxUno {
+        width: 100%;
+
+        .textBox-1 {
+            h2 {
+                color: $lila;
+                font-size: 3rem;
+                padding-left: 2rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                padding-left: 2rem;
+            }
+        }
+        .textBox-2 {
+            h2 {
+                color: $lila;
+                font-size: 3rem;
+                padding-right: 2rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                padding-right: 2rem;
+            }
+        }
+
+        .imgBox-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
                 width: 80%;
             }
         }
-        .imgBox-2{
-            img{
+        @media screen and (max-width:1040px) {
+            .textBox-1{
+                h2{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        @media screen and (max-width:900px) {
+            .textBox-1{
+                h2{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: .8rem;
+                }
+            }
+            .imgBox-1{
+                img{
+                    width: 70%;
+                }
+            }
+            .imgBox-2{
+                img{
+                    width: 70%;
+                }
+            }
+        }
+
+        .imgBox-2 {
+            img {
                 width: 100%;
             }
         }
-        
+
+        @media screen and (max-width:500px) {
+            .textBox-1{
+                
+                h2{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: .8rem;
+                }
+            }
+            .imgBox-1{
+                img{
+                    width: 80%;
+                }
+            }
+            .imgBox-2{
+                img{
+                    width: 80%;
+                }
+            }
+        }
+
+        .imgBox-2 {
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
+}
+
+//ADOPTA
+
+.adopta{
+    .h1{
+        height: 15rem;
+        background-image: url("../img/adopta.png");
+        background-position: center;
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items:center ;
+        h1{
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 3.2rem;
+        }
+    }
+    .card{
+        .img-box{
+            width: 12.5rem;
+            height: 12.5rem;
+            overflow: hidden;
+        }
+        border: none;
+        img{
+            border-radius: 0%;
+        }
+        a{
+            @include botones;
+            border: none;
+        }
+    }
+}
+
+//CONTACTO
+
+.contacto{
+    .h1{
+        height: 15rem;
+        background-image: url("../img/perro\ contacto1.png");
+        background-position: center;
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items:center ;
+        h1{
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 3.2rem;
+        }
+    }
+    .maps{
+        margin-top: 2rem;
+        p{
+            width: 300;
+        }
+    }
+    .form{
+        h2{
+            font-size: 2.2rem;
+        }
+        label{
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: block;
+            margin-bottom: .5%;
+        }
+        input{
+            border: .2px solid gray;
+            display: block;
+            width: 85%;
+            height: 2rem;
+            margin-bottom: 2%;
+            border-radius: 4px;
+        }
+        #nombre{
+            width: 100%;
+        }
+        #apellido{
+            width: 72%;
+        }
+
+        select, option{
+            border-radius: 4px;
+            height: 2rem;
+        }
+
+        #comentarios{
+            width: 85%;
+            height: 5rem;
+        }
+        .boton{
+            @include botones;
+            border: none;
+        }
     }
     
+}
+
+//NOSOTROS 
+
+.nosotros{
+    .h1{
+        height: 15rem;
+        background-image: url("../img/perro\ pp.png");
+        background-position: center;
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items:center ;
+        h1{
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 3.2rem;
+        }
+    }
+    .box-1{
+         h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: $rosa;
+         }
+         p{
+            font-size: 1.5rem;
+            width: 90%;
+            .remarcada{
+                color: $rosa;
+            }
+         }
+    }
+    .box-2{
+        background-color: $rosa;
+        h4{
+            color: white;
+        }
+        .left, .rigth{
+            img{
+                width: 30%;
+            }
+            p{
+                width: 80%;
+                color: white;
+            }
+        }
+    }
+    .box-3{
+        h4{
+            font-size: 2.5rem;
+            color: $rosa;
+        }
+        p{
+            font-size: 1rem;
+            width: 90%;
+        }
+        img{
+            width: 80%;
+        }
+    }
+    .box-4{
+        h4{
+            font-size: 2.5rem;
+            color: $rosa;
+        }
+        p{
+            font-size: 1rem;
+            width: 85%;
+        }
+    }
+    .box-5{
+        img{
+            width: 85%;
+        }
+        .text{
+            background-color: 
+            $celeste;
+            width: 45%;
+            h4{
+                font-size: 2.2rem;
+                width: 80%;
+                color: white;
+            }
+            p{
+                font-size: 1.1rem;
+                width: 80%;
+                color: white;
+            }
+            a{
+                font-size: 1.2rem;
+                padding: 8px;
+                @include botones2;
+            }
+        }
+    }
+}
+
+//VOLUNTARIO
+
+.voluntario{
+    .h1{
+        height: 15rem;
+        background-image: url("../img/gato\ voluntario.png");
+        background-position: center;
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items:center ;
+        h1{
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 3.2rem;
+        }
+    }
+    .box-1{
+        .left{
+            h2{
+                font-size: 3rem;
+                color: $celeste;
+            }
+            p{
+                font-weight: 500;
+            }
+            .resaltada{
+                font-size: 1.3rem;
+                color: $celeste;
+                font-weight: 700;
+            }
+        }
+        .rigth{
+            border: none;
+            background-color: $celeste;
+            h2{
+                font-size: 2.5rem;
+                color: white;
+                font-weight: 700;
+            }
+            p{
+                font-size: 1.1rem;
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+    .box-2{
+        h2{
+            font-size: 3rem;
+            color: $celeste;
+        }
+        .cuadricula{
+            img{
+                width: 7rem;
+            }
+            h4{
+
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+            p{
+                padding: 0 4% 0 4%;
+            }
+        }
+    }
+    .box-3{
+        .box {
+            width: 20rem;
+            height: 15rem;
+            overflow: hidden;
+        }
     
+        img {
+            width: 20rem;
+        }
+    }
 }
